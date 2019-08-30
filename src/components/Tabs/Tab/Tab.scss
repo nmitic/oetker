@@ -1,0 +1,44 @@
+@import '../../../styles/colors.scss';
+
+.tab {
+  padding: 20px;
+  border: 2px solid $gray-border;
+  border-bottom: none;
+  margin-right: 10px;
+  background: $gray-dark;
+  cursor: pointer;
+  margin-bottom: -2px;
+  text-transform: uppercase;
+  color: $yellow-gold;
+  font-weight: bold;
+  font-size: 16px;
+  user-select: none;
+
+  &--accordion {
+    border: none;
+    margin: 0;
+
+    color: $gray-dark;
+    background: $white-background;
+
+    &:after {
+      content: "\2193";
+      position: relative;
+      left: 10px;
+      font-size: 15px;
+    }
+
+    &.tab--active {
+      color: $yellow-gold;
+
+      &:after {
+        content: "\2191";
+      }
+    }
+  }
+
+  &--active {
+    color: $gray-dark;
+    background: $white-background;
+  }
+}

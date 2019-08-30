@@ -1,0 +1,47 @@
+@import '../../styles/colors.scss';
+
+@keyframes countUp {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(18px - 100%));
+  }
+}
+
+.animated-list {
+  &__item {
+    border-bottom: 1px solid $gray-border-light;
+    padding: 20px 0;
+    align-items: center;
+    display: flex;
+  }
+  &__anchor {
+    text-decoration: none;
+    color: $black-text;
+    font-size: 20px;
+    margin-right: 6px;
+    display: inline-block;
+
+    &:hover {
+      color: $yellow-gold;
+    }
+  }
+  &__info {
+    font-size: 16px;
+    padding-left: 16px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    color: $gray-text;
+  }
+  &__count-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    animation: countUp 1.8s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}

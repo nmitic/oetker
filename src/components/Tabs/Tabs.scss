@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+.tabs {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__list--accordion {
+    flex-direction: column;
+  }
+  &__content {
+    border: 2px solid $gray-border;
+    padding: 25px; 
+    background: $white-background;
+  }
+  &--accordion {
+    .tabs__content {
+      border: none;
+    }
+  }
+}

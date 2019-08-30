@@ -1,0 +1,22 @@
+.archives-list {
+  
+  @media ( min-width: 600px ) {
+    height: 580px;
+    overflow-y: scroll;
+  }
+  &__item {
+    margin-bottom: 16px;
+    clear: both;
+    &:after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  &__image {
+    width: 150px;
+    float: right;
+    margin-left: 6px;
+  }
+}

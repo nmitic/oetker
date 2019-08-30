@@ -1,0 +1,33 @@
+@import '../../../styles/colors.scss';
+
+.tabs-wrapper {
+  width: 100%;
+  
+  margin: 0 auto;
+  margin-top: 10px;
+
+  &__border {
+    border: 2px solid $gray-border;
+    background: $gray-medium;
+    padding: 18px;
+    margin-top: 22px;
+  }
+
+  &__title {
+    color: $white-text;
+    font-size: 38px;
+    margin-right: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+
+  &__sub-title {
+    color: $gray-text;
+  }
+
+  @media ( min-width: 600px ) {
+    width: 600px;
+    margin-top: 50px;
+  }
+}

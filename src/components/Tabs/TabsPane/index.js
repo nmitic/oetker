@@ -1,0 +1,1 @@
+export { TabsPane } from './TabsPane';
